@@ -6,8 +6,8 @@
 
 body {
     padding: 2rem;
-    background-color: #333;
-    color: whitesmoke;
+    background-color: #87CEEB;
+    color: black;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,4 +20,21 @@ input, button {
     font-size: 2rem;
     padding: 1rem;
     border-radius: 10px;
+}
+
+.Weather__title{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.temperature__box{
+    height: 200px;
+    width: 400px;
+    background-color: white;
+}
+
+.feel__like__box {
+    height: 200px;
+    width: 400px;
+    background-color: white;
 }
