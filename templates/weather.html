@@ -10,58 +10,32 @@
 
 <body>
 
+    <form action="/weather">
+        <input type="text" name="city" id="city" placeholder="Enter a City" />
+        <button type="submit">Submit</button>
+    </form>
+
+
     <div class="Weather__title">
-        <h1>{{ title }} Weather</h1>
+        <h1>{{ title }},{{country}} Weather</h1>
     </div>
     
     <div class="temperature__box">
         <p> {{ temp }} &deg;</p>
         <p> {{ status }} </p>
+       
+
+
     </div>
 
     <div class="feel__like__box">
         <p>Feels like {{ feels_like }} &#8457;</p>
         <p>Humidity {{ humidity }} &#37;</p>
-        <p>Wind {{ wind }} mph</p>
+        <p> Wind {{ wind }} mph</p>
         <p>Pressure {{ pressure }} in</p>
     </div>
 
 
-
-
-    <!--need to put on the top left corner-->
-    <form action="/weather">
-        <input type="text" name="city" id="city" placeholder="Enter a City" />
-        <button type="submit">Submit</button>
-    </form>
-
-
-
-     <!-- <div class="temperature-box"></div>
-    <div class="feel-like-box"></div> -->
-
-   <!--  <h1>{{ title }} Weather</h1>
-    <h2 id="current-time"></h2> 
-    <p>{{ status }} and {{ temp }} &deg;</p>
-    <p>Feels like {{ feels_like }} &deg;</p>
-
-    <form action="/weather">
-        <input type="text" name="city" id="city" placeholder="Enter a City" />
-        <button type="submit">Submit</button>
-    </form>
-
-     <script>
-        let time = document.getElementById("current-time");
-
-        setInterval(() =>{
-            let d = new Date();
-            time.innerHTML = d.toLocaleTimeString();
-
-        },1000)
-       
-
-    </script> -->
-    
 
 
 
